@@ -1,2 +1,2 @@
-.nodemodule
-.tests_output
+.nodemodule/
+.tests_output/
