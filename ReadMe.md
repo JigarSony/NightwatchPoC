@@ -10,6 +10,7 @@ Official Website [Nightwatch](https://nightwatchjs.org/)
  - Open Terminal
  - Check node version `node --version`
  - Check npm `npm --version`
+ - Check node package executor `npx --version`
  - Create `package.json`
  - Type `npm init -y`
  - install dependencies ``npm install nightwatch chromedriver --save-dep``
