@@ -1,8 +1,8 @@
 # Nightwatch
 
-Official Website [Nightwatch] (https://nightwatchjs.org/)
+Official Website [Nightwatch](https://nightwatchjs.org/)
 
-[NPM] (https://www.npmjs.com/package/nightwatch)
+[NPM](https://www.npmjs.com/package/nightwatch)
 
 ## Procedure
 
@@ -18,10 +18,8 @@ Official Website [Nightwatch] (https://nightwatchjs.org/)
  - check nightwatch version `npx nightwatch --version`
  - To run/create config file `npx nightwatch`
 
-  ### FirstRun 
-  
-  npx nightwatch
-
+ #### Execution-1   
+`npx nightwatch`
 <p>
 Error: An error occurred while trying to start the Nightwatch Runner: The path to the GeckoDriver binary is not set.
 You can either install geckodriver from NPM:
@@ -41,29 +39,22 @@ at processTicksAndRejections (internal/process/task_queues.js:93:5)
 
  - Modified config file
  - src_folders: ["./test"],
- 
- 
  - Run
 `npx nightwatch -e chrome`
 
+ #### Execution-2
 <p>
 Error: No test source specified, please check configuration.
 at processTicksAndRejections (internal/process/task_queues.js:93:5)
-
 XXXXXX NightWatchPoC % npx nightwatch -e chrome
-
 [First Test] Test Suite
 
 =======================
 
 ℹ Connected to localhost on port 9515 (1895ms).
-
 Using: chrome (91.0.4472.114) on Mac OS X platform.
-
 ⚠ Running Our first test:
-
 No assertions ran.
-
 - Static wait in Nightwatch `browser.pause(3000);`
 - To Click on any element `browser.click("Element");`
 - By default browser take css
@@ -75,62 +66,31 @@ browser.url("https://actionqa.com");
 browser.pause(3000);
 browser.end();
 },
-
 - `""+ before function`
-
  - For Assert of visible element
 `browser.assert.visible("#surprise-message");`
-
 - NightWatch by default wait is 5000ms
 
+ #### Execution-3
 xxxxx NightWatchPoC % npx nightwatch -e chrome
-
 [First Test] Test Suite
 
 =======================
-
 ℹ Connected to localhost on port 9515 (1436ms).
-
 Using: chrome (91.0.4472.114) on Mac OS X platform.
-
-  
-
 ⚠ Running Click test:
-
-  
-
 ✖ Testing if element <#surprise-message> is visible in 5000ms - expected "is visible" but got: "not visible" (5210ms)
-
 at Object.Click test (/Users/jigarsony/Desktop/GitHubRepos/NightWatchPoC/test/firstTest.js:14:24)
-
 at processTicksAndRejections (internal/process/task_queues.js:93:5)
-
-  
-  
-
 FAILED: 1 assertions failed (5.878s)
-
 _________________________________________________
-
-  
-
 TEST FAILURE: 1 assertions failed, 0 passed (7.579s)
-
-  
-
 ✖ firstTest
-
 – Click test (5.878s)
-
 Testing if element <#surprise-message> is visible in 5000ms - expected "is visible" but got: "not visible" (5210ms)
-
 at Object.Click test (/Users/jigarsony/Desktop/GitHubRepos/NightWatchPoC/test/firstTest.js:14:24)
-
 at processTicksAndRejections (internal/process/task_queues.js:93:5)
-
-
 - For Assert in any element text
-
 `browser.assert.containsText("#submitted-email","foo@bar.com");`
 
 - Tags
